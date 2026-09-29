@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Keras / TensorFlow
+*.h5
+model.weights.h5
+*.keras
+
+# Weight dumps (MATLAB output)
+weight_export/*.txt
+
+# FPGA / Quartus
+*.sof
+*.pof
+*.qdf
+db/
+incremental_db/
+output_files/
+*.rpt
+*.summary
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
