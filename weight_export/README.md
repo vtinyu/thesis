@@ -5,14 +5,14 @@
 This folder contains MATLAB scripts to extract trained weights from the Keras `.h5` model file, quantize them to fixed-point INT16 (Q1.15 format), and export to C-compatible text files for FPGA hardware loading.
 
 ## Directory Structure
-'''
+```
 weight_export/
 ├── export.m # Main export orchestrator
 ├── write_weight_vgg_face_keras.m # Layer-by-layer weight extraction
 ├── write_txt_c.m # Binary formatting to C-readable text
 ├── reshape_arr.m # Tensor reshaping utility
 └── README.md # This file
-'''
+```
 
 ### Files
 
@@ -157,6 +157,7 @@ dense2_b.txt
 
 The script assumes the following HDF5 structure (Keras v3 native format):
 
+```
 model.weights.h5
 ├── layers/
 │ ├── conv2d/
@@ -176,7 +177,7 @@ model.weights.h5
 │ └── vars/
 │ ├── 0
 │ └── 1
-
+```
 
 ### Verify Model Structure
 

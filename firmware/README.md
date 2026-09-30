@@ -5,7 +5,7 @@
 This folder contains the ARM HPS (Hard Processor System) firmware for the DE10-Standard FPGA board. The firmware loads quantized weights, reads input images, and dispatches inference through the custom CNN IP core, outputting classification results.
 
 ## Directory Structure
-'''
+```
 firmware/
 ├── main.cpp # Entry point
 ├── VideoMaterialDetector/ # Main detector module
@@ -22,7 +22,7 @@ firmware/
 │ └── hw_registers.h
 ├── Makefile # Build configuration
 └── README.md # This file
-'''
+```
 
 ### Files & Responsibilities
 

@@ -24,7 +24,7 @@ This repository implements an **embedded deep learning system** across three int
 ## Directory Structure
 
 ```
-.
+
 ├── training/                   # Python training pipeline
 │   ├── industrial.py          # Main Keras training script (580 lines)
 │   ├── requirements.txt        # Python dependencies
