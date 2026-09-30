@@ -17,7 +17,7 @@ This repository implements an **embedded deep learning system** across three int
 - **Input:** 64×64 grayscale images
 - **Output:** 5-class defect classification (5 industrial defect types)
 - **Resource Usage:** 22,494 ALMs (54%), 112 DSP (100%), 553 RAM blocks (100%)
-- **Inference Latency:** 15–34 ms/frame @ 81.01 MHz (Fmax at 85°C)
+- **Inference Latency:** 15–34 ms/frame at 81.01 MHz (Fmax at 85°C)
 
 ## Directory Structure
 
@@ -103,7 +103,7 @@ See `firmware/README.md` for Quartus project setup, HPS compilation, and on-boar
 | Colab Validation Accuracy | 99.07% |
 | On-Board Accuracy (HPS+FPGA) | ~88% (resource-constrained int16) |
 | Inference Latency | 15–34 ms/frame |
-| Max Frequency (Fmax) | 81.01 MHz @ 85°C |
+| Max Frequency (Fmax) | 81.01 MHz at 85°C |
 | Resource Usage | 22,494 ALMs (54%), 112 DSP (100%), 553 RAM blocks (100%) |
 
 ## Thesis & Acknowledgments
