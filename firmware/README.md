@@ -5,7 +5,7 @@
 This folder contains the ARM HPS (Hard Processor System) firmware for the DE10-Standard FPGA board. The firmware loads quantized weights, reads input images, and dispatches inference through the custom CNN IP core, outputting classification results.
 
 ## Directory Structure
-
+'''
 firmware/
 ├── main.cpp # Entry point
 ├── VideoMaterialDetector/ # Main detector module
@@ -22,7 +22,7 @@ firmware/
 │ └── hw_registers.h
 ├── Makefile # Build configuration
 └── README.md # This file
-
+'''
 
 ### Files & Responsibilities
 
@@ -147,7 +147,7 @@ for (int y = 0; y < 66; y++) {
 - Exactly one classification per frame
 - No multi-ROI dispatch (previous architecture)
 
-**Latency budget:** 15–34 ms/frame @ 81 MHz
+**Latency budget:** 15–34 ms/frame (81 MHz)
 
 ---
 
@@ -332,11 +332,11 @@ while (!(read_register(STATUS) & 0x01)) {  // Wait for DONE
 
 TimeQuest analysis (Quartus Prime 17.0):
 Clock domain: CLOCK_50 (50 MHz input)
-Fmax @ 85°C: 81.01 MHz
-Fmax @ 0°C: 83.63 MHz
+Fmax at 85°C: 81.01 MHz
+Fmax at 0°C: 83.63 MHz
 
 
-**Operating point:** 81 MHz @ 85°C (worst-case)
+**Operating point:** 81 MHz at 85°C (worst-case)
 
 ---
 

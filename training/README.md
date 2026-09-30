@@ -5,12 +5,12 @@
 This folder contains the Keras/TensorFlow training script for the VGG-9 surface defect detection model. The pipeline handles data loading, augmentation, model building, training, and validation on industrial surface defect datasets.
 
 ## Directory Structure
-
+'''
 training/
-├── industrial.py # Main Keras training script (580 lines)
+├── industrial.py # Main Keras training script 
 ├── requirements.txt # Python dependencies
 └── README.md # This file
-
+'''
 
 ### Files
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ## Dataset Format
 
 Prepare your industrial defect dataset with the following structure:
-
+'''
 dataset/
 ├── class_0/ (e.g., Rust)
 │ ├── img_001.jpg
@@ -55,7 +55,7 @@ dataset/
 │ └── ...
 └── class_4/ (e.g., Normal)
 └── ...
-
+'''
 
 **Class Mapping (5 classes):**
 - `class_0` → Rust
