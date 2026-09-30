@@ -1,0 +1,62 @@
+# Build artifacts
+*.o
+*.a
+*.so
+*.elf
+*.axf
+build/
+output/
+bin/
+
+# Object files
+*.o
+*.obj
+*.ko
+
+# Executable files
+*.elf
+*.exe
+*.out
+firmware
+
+# Dependency files
+*.d
+*.dep
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ARM GCC build system
+*.map
+*.lst
+
+# Altera/Intel tools
+incremental_db/
+db/
+*.rpt
+*.summary
+*.qdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.bak
+
+# Weight files (copy from weight_export/ instead)
+*.txt
+!README.md
+!Makefile
+
+# CMake (if used)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake

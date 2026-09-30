@@ -21,32 +21,37 @@ This repository implements an **embedded deep learning system** across three int
 
 ## Directory Structure
 
+## Directory Structure
+
+```
 .
-├── training/ # Python training pipeline
-│ ├── industrial.py # Main Keras training script (580 lines)
-│ ├── requirements.txt # Python dependencies
-│ └── README.md # Training instructions
-├── weight_export/ # MATLAB quantization & export scripts
-│ ├── export.m # Main export orchestrator
-│ ├── write_weight_vgg_face_keras.m # Layer-by-layer weight extraction
-│ ├── write_txt_c.m # Binary formatting to C-readable text
-│ ├── reshape_arr.m # Tensor reshaping utility
-│ └── README.md # Quantization format documentation
-├── firmware/ # ARM HPS C/C++ code
-│ ├── main.cpp # Entry point
-│ ├── VideoMaterialDetector/ # Main detector module
-│ ├── conv/ # Convolution layer handlers
-│ ├── dense/ # Dense/FC layer handlers
-│ ├── hwlib/ # Hardware register interface
-│ ├── Makefile # Build configuration
-│ └── README.md # Build & deployment guide
-├── fpga/ # Quartus design files (if included)
-│ └── README.md # IP core and Quartus project notes
-├── docs/
-│ ├── architecture.md # System block diagram & layer table
-│ └── results.md # Accuracy, resource, timing results
-├── .gitignore # Git ignore rules
-└── README.md # This file
+├── training/                   # Python training pipeline
+│   ├── industrial.py          # Main Keras training script (580 lines)
+│   ├── requirements.txt        # Python dependencies
+│   └── README.md              # Training instructions
+│
+├── weight_export/             # MATLAB quantization & export scripts
+│   ├── export.m               # Main export orchestrator
+│   ├── write_weight_vgg_face_keras.m  # Layer-by-layer weight extraction
+│   ├── write_txt_c.m          # Binary formatting to C-readable text
+│   ├── reshape_arr.m          # Tensor reshaping utility
+│   └── README.md              # Quantization format documentation
+│
+├── firmware/
+|   ├── .gitignore                  # ARM HPS C/C++ code
+│   ├── main.cpp               # Entry point
+│   ├── VideoMaterialDetector/  # Main detector module
+│   ├── conv/                  # Convolution layer handlers
+│   ├── dense/                 # Dense/FC layer handlers
+│   ├── hwlib/                 # Hardware register interface
+│   ├── Makefile               # Build configuration
+│   └── README.md              # Build & deployment guide
+│
+├── docs/                      # Documentation
+│
+├── .gitignore                 # Git ignore rules
+└── README.md                  # Main project readme
+```
 
 
 ## Quick Start
